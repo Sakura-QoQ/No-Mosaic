@@ -6,10 +6,10 @@ belongs to third parties.
 
 ## Original project material
 
-Copyright (c) 2026 Bruce-Sakura (GitHub: Sakura-QoQ). All rights reserved.
+Copyright (c) 2026 NoMosaic Project Administrator. All rights reserved.
 
 Unless a separate license expressly says otherwise, the original expression in
-the following material is owned by Bruce-Sakura (GitHub: Sakura-QoQ):
+the following material is owned by the NoMosaic Project Administrator:
 
 - the NoMosaic patcher source and project-specific build configuration;
 - the installer scripts and release packaging created for this project;
@@ -23,8 +23,8 @@ use or a separate license is later added.
 
 ## Third-party material
 
-The project includes third-party components that are not owned by
-Bruce-Sakura:
+The project includes third-party components that are not owned by the NoMosaic
+Project Administrator:
 
 | Component | Upstream project | Rights and license |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 # Third-party notices
 
 NoMosaic uses the following third-party components. These components are not
-owned by the NoMosaic project author.
+owned by the NoMosaic Project Administrator.
 
 ## AssetsTools.NET
 
