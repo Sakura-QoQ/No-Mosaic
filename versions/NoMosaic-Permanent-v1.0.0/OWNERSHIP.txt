@@ -1,0 +1,21 @@
+NoMosaic ownership and rights statement
+=======================================
+
+Copyright (c) 2026 Bruce-Sakura (GitHub: Sakura-QoQ). All rights reserved.
+
+The original NoMosaic patcher code, installer scripts, project documentation,
+project-specific verification logic, and release packaging are original project
+material. Unless a separate license expressly says otherwise, no public license
+is granted for that original material.
+
+AssetsTools.NET.dll, classdata.tpk, UABEA-derived dependencies, FallenFlower,
+Unity, and all associated third-party content are not owned by Bruce-Sakura.
+They remain subject to the rights and licenses of their respective owners.
+See THIRD-PARTY-NOTICES.txt for bundled third-party license notices.
+
+This package does not contain an original or patched FallenFlower resource
+bundle. It modifies a compatible game installation on the user's own computer.
+
+NoMosaic is an independent, unofficial fan project and is not affiliated with,
+authorized by, sponsored by, or endorsed by any game, engine, or tool vendor.
+The package is provided without warranty.

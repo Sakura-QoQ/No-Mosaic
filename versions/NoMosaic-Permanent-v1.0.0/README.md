@@ -48,3 +48,9 @@ Successful installation ends with output similar to:
 VERIFY_MATERIAL_HIDDEN_OK pathId=83 shader=1:165
 Installation completed successfully.
 ```
+
+## Ownership and third-party licenses
+
+Read `OWNERSHIP.txt` for the ownership boundary and
+`THIRD-PARTY-NOTICES.txt` for the licenses covering bundled third-party
+components. FallenFlower and Unity content are not owned by this project.
