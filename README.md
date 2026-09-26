@@ -31,8 +31,7 @@ NoMosaic/
 - [Detailed reverse-engineering guide](docs/NoMosaic-Reverse-Engineering-Guide.md)
 - [Investigation timeline](work/timeline.md)
 - [Patcher source](work/tools/MosaicAssetPatch/Program.cs)
-- [Ownership and rights statement](OWNERSHIP.md)
-- [Third-party notices](THIRD_PARTY_NOTICES.md)
+- [License, ownership, and third-party notices](LICENSE)
 
 ## Important notes
 
@@ -48,4 +47,4 @@ NoMosaic/
 - Do not apply old resource files after a game update. Rescan the updated build
   and regenerate the patch.
 - Original and patched game resource bundles are not distributed by this
-  repository. See the ownership statement for the complete rights boundary.
+  repository. See `LICENSE` for the complete rights boundary.

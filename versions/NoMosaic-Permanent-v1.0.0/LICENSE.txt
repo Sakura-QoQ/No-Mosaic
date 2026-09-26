@@ -1,7 +1,40 @@
-Third-party notices
-===================
+NoMosaic License and Third-Party Notices
+========================================
 
-AssetsTools.NET
+1. NoMosaic project material
+----------------------------
+
+Copyright (c) 2026 NoMosaic Project Administrator. All rights reserved.
+
+The NoMosaic Project Administrator owns the original NoMosaic patcher source,
+project-specific build configuration, installer scripts, release packaging,
+documentation, research reports, diagrams, verification logic, and workflow
+metadata.
+
+No public license is granted to copy, modify, distribute, sublicense, or sell
+that original project material. Permission must be obtained from the NoMosaic
+Project Administrator unless applicable law expressly permits the intended use.
+
+2. Game and engine rights
+-------------------------
+
+FallenFlower, its executable files, assets, characters, artwork, audio,
+trademarks, and other game content belong to their respective rights holders.
+Unity and related marks belong to their respective rights holders. The NoMosaic
+Project Administrator claims no ownership of that content.
+
+This package does not contain an original or patched FallenFlower resource
+bundle. It modifies a compatible game installation already present on the
+user's computer.
+
+NoMosaic is an independent, unofficial fan project. It is not affiliated with,
+authorized by, sponsored by, or endorsed by the developers or publishers of
+FallenFlower, Unity Technologies, or the authors of the third-party tools. The
+package is provided without warranty.
+
+3. AssetsTools.NET
+------------------
+
 Project: https://github.com/nesrak1/AssetsTools.NET
 Included files: tools/AssetsTools.NET.dll and tools/classdata.tpk
 
@@ -26,11 +59,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 The upstream release history states that classdata.tpk was generated with
-TypeTreeDumper and no longer has the former BY-NC-SA license:
+TypeTreeDumper and no longer carries the former BY-NC-SA license:
 https://github.com/nesrak1/AssetsTools.NET/releases
 
-UABEA
+4. UABEA
+--------
+
 Project: https://github.com/nesrak1/UABEA
 Use: upstream source of the development dependency set
 

@@ -1,15 +1,43 @@
-# Third-party notices
+NoMosaic License and Third-Party Notices
+========================================
 
-NoMosaic uses the following third-party components. These components are not
-owned by the NoMosaic Project Administrator.
+1. NoMosaic project material
+----------------------------
 
-## AssetsTools.NET
+Copyright (c) 2026 NoMosaic Project Administrator. All rights reserved.
 
-- Project: <https://github.com/nesrak1/AssetsTools.NET>
-- Included files: `AssetsTools.NET.dll` and the accompanying `classdata.tpk`
-- License: MIT
+The NoMosaic Project Administrator owns the original NoMosaic patcher source,
+project-specific build configuration, installer scripts, release packaging,
+documentation, research reports, diagrams, verification logic, and workflow
+metadata.
 
-```text
+No public license is granted to copy, modify, distribute, sublicense, or sell
+that original project material. Permission must be obtained from the NoMosaic
+Project Administrator unless applicable law expressly permits the intended use.
+
+2. Game and engine rights
+-------------------------
+
+FallenFlower, its executable files, assets, characters, artwork, audio,
+trademarks, and other game content belong to their respective rights holders.
+Unity and related marks belong to their respective rights holders. The NoMosaic
+Project Administrator claims no ownership of that content.
+
+This repository and its release package do not intentionally redistribute an
+original or patched FallenFlower resource bundle. The installer operates on a
+compatible game installation already present on the user's computer.
+
+NoMosaic is an independent, unofficial fan project. It is not affiliated with,
+authorized by, sponsored by, or endorsed by the developers or publishers of
+FallenFlower, Unity Technologies, or the authors of the third-party tools. The
+project is provided without warranty.
+
+3. AssetsTools.NET
+------------------
+
+Project: https://github.com/nesrak1/AssetsTools.NET
+Included files: AssetsTools.NET.dll and classdata.tpk
+
 MIT License
 
 Copyright (c) 2020 nesrak1
@@ -31,20 +59,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
-The AssetsTools.NET release notes state that the distributed `classdata.tpk`
-was generated with TypeTreeDumper and no longer carries the former BY-NC-SA
-license. See the upstream release history for that clarification:
-<https://github.com/nesrak1/AssetsTools.NET/releases>.
 
-## UABEA
+The upstream release history states that classdata.tpk was generated with
+TypeTreeDumper and no longer carries the former BY-NC-SA license:
+https://github.com/nesrak1/AssetsTools.NET/releases
 
-- Project: <https://github.com/nesrak1/UABEA>
-- Use in this repository: source of the AssetsTools.NET development dependency
-  set used to build the patcher
-- License: MIT
+4. UABEA
+--------
 
-```text
+Project: https://github.com/nesrak1/UABEA
+Use: upstream source of the development dependency set
+
 MIT License
 
 Copyright (c) 2021 nesrak1
@@ -66,4 +91,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```

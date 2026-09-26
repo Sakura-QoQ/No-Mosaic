@@ -22,8 +22,7 @@ original or patched FallenFlower resource bundle.
 
 `tools/UABEA-v8/AssetsTools.NET.dll` and `classdata.tpk` are included only as
 build dependencies. They are not owned by this project. Their upstream sources
-and applicable notices are recorded in
-[`../THIRD_PARTY_NOTICES.md`](../THIRD_PARTY_NOTICES.md).
+and applicable notices are recorded in [`../LICENSE`](../LICENSE).
 
 ## What must remain local
 
@@ -46,6 +45,6 @@ Do not force-add ignored game content with `git add -f`.
 
 ## Rights
 
-See [`../OWNERSHIP.md`](../OWNERSHIP.md) for the ownership statement. Project
-ownership does not extend to FallenFlower, Unity, AssetsTools.NET, UABEA, or
-other third-party content.
+See [`../LICENSE`](../LICENSE) for the ownership statement and third-party
+notices. Project ownership does not extend to FallenFlower, Unity,
+AssetsTools.NET, UABEA, or other third-party content.
