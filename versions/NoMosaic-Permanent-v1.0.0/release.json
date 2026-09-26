@@ -1,0 +1,9 @@
+{
+  "name": "NoMosaic Permanent",
+  "version": "1.0.0",
+  "type": "serialized-material-patcher",
+  "requiresModLoader": false,
+  "requiresEnableModsArgument": false,
+  "target": "FallenFlower_Data/sharedassets0.assets",
+  "backupCreated": false
+}

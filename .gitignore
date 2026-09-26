@@ -1,0 +1,26 @@
+# Local reverse-engineering exports and patched game resources
+work/assetripper-export/
+work/patched/
+work/patched-material/
+
+# Downloaded third-party tool distributions
+work/tools/AssetRipper_*/
+work/tools/*.zip
+work/tools/tscheck/node_modules/
+
+# .NET and TypeScript build output
+work/tools/MosaicAssetPatch/bin/
+work/tools/MosaicAssetPatch/obj/
+
+# Keep only the two small AssetsTools.NET build dependencies from UABEA
+work/tools/UABEA-v8/*
+!work/tools/UABEA-v8/AssetsTools.NET.dll
+!work/tools/UABEA-v8/classdata.tpk
+
+# Local editor and OS files
+.vs/
+.vscode/
+*.user
+*.suo
+Thumbs.db
+Desktop.ini
