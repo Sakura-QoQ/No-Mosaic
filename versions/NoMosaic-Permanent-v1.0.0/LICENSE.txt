@@ -1,21 +1,56 @@
-NoMosaic License and Third-Party Notices
-========================================
-
-1. NoMosaic project material
-----------------------------
+NoMosaic Non-Commercial Derivative Development License
+=======================================================
 
 Copyright (c) 2026 NoMosaic Project Administrator. All rights reserved.
 
-The NoMosaic Project Administrator owns the original NoMosaic patcher source,
-project-specific build configuration, installer scripts, release packaging,
-documentation, research reports, diagrams, verification logic, and workflow
-metadata.
+This is not the MIT License. This license applies only to original NoMosaic
+project material. The MIT notices later in this file apply only to the named
+third-party components and do not license NoMosaic itself under MIT.
 
-No public license is granted to copy, modify, distribute, sublicense, or sell
-that original project material. Permission must be obtained from the NoMosaic
-Project Administrator unless applicable law expressly permits the intended use.
+1. Permitted use
+----------------
 
-2. Game and engine rights
+End users may install and run an official, unmodified NoMosaic release for
+private, non-commercial use. Beyond that end-user permission, the NoMosaic
+Project Administrator grants access to, copying of, study of, and modification
+of original NoMosaic project material solely for non-commercial secondary
+development. "Secondary development" means creating, testing, or maintaining
+a modified or derivative version of NoMosaic.
+
+Distribution is permitted only when it is part of a genuine non-commercial
+modified or derivative project. Any distributed derivative must:
+
+- clearly identify that it is modified from NoMosaic;
+- retain this complete LICENSE file and all copyright notices;
+- use the same non-commercial restrictions for the NoMosaic-derived portions;
+- preserve all third-party license notices; and
+- avoid suggesting endorsement by the NoMosaic Project Administrator.
+
+No permission is granted to redistribute the unmodified project or release
+package as a standalone mirror.
+
+2. Commercial use is prohibited
+--------------------------------
+
+Commercial use is prohibited without prior written permission from the
+NoMosaic Project Administrator. Prohibited commercial use includes selling,
+licensing for a fee, paid distribution, paid support or modification services,
+use in a revenue-generating product or service, advertising-supported
+distribution, and bundling with a commercial product.
+
+3. Ownership and termination
+-----------------------------
+
+The NoMosaic Project Administrator retains ownership of the original patcher
+source, project-specific build configuration, installer scripts, release
+packaging, documentation, research reports, diagrams, verification logic, and
+workflow metadata.
+
+This permission terminates automatically upon violation of these terms. After
+termination, all distribution and commercial use must stop. Rights not
+expressly granted are reserved.
+
+4. Game and engine rights
 -------------------------
 
 FallenFlower, its executable files, assets, characters, artwork, audio,
@@ -27,13 +62,16 @@ This package does not contain an original or patched FallenFlower resource
 bundle. It modifies a compatible game installation already present on the
 user's computer.
 
-NoMosaic is an independent, unofficial fan project. It is not affiliated with,
-authorized by, sponsored by, or endorsed by the developers or publishers of
-FallenFlower, Unity Technologies, or the authors of the third-party tools. The
-package is provided without warranty.
+NoMosaic is an independent project. It is not affiliated with, authorized by,
+sponsored by, or endorsed by the developers or publishers of FallenFlower,
+Unity Technologies, or the authors of the third-party tools.
 
-3. AssetsTools.NET
-------------------
+The package is provided "as is", without warranty of any kind. Users and
+developers are responsible for complying with applicable law, game terms, and
+third-party licenses.
+
+5. Third-party notices: AssetsTools.NET
+---------------------------------------
 
 Project: https://github.com/nesrak1/AssetsTools.NET
 Included files: tools/AssetsTools.NET.dll and tools/classdata.tpk
@@ -64,8 +102,8 @@ The upstream release history states that classdata.tpk was generated with
 TypeTreeDumper and no longer carries the former BY-NC-SA license:
 https://github.com/nesrak1/AssetsTools.NET/releases
 
-4. UABEA
---------
+6. Third-party notices: UABEA
+-----------------------------
 
 Project: https://github.com/nesrak1/UABEA
 Use: upstream source of the development dependency set

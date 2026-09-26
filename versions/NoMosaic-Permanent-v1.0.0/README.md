@@ -4,6 +4,9 @@ Permanent material patch for FallenFlower. It replaces the serialized `Mosaic`
 material payload with the game's own transparent `Hided` material while
 preserving the original material name and PathID.
 
+NoMosaic is not MIT-licensed. Commercial use is prohibited. Non-commercial
+secondary development is permitted only under the conditions in `LICENSE.txt`.
+
 This release is the successfully validated solution. It is not the retired
 TypeScript/Jint runtime Mod and does not perform per-frame scans.
 

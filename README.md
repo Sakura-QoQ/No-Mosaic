@@ -31,10 +31,12 @@ NoMosaic/
 - [Detailed reverse-engineering guide](docs/NoMosaic-Reverse-Engineering-Guide.md)
 - [Investigation timeline](work/timeline.md)
 - [Patcher source](work/tools/MosaicAssetPatch/Program.cs)
-- [License, ownership, and third-party notices](LICENSE)
+- [Non-commercial derivative-development license](LICENSE)
 
 ## Important notes
 
+- NoMosaic is not MIT-licensed. Commercial use is prohibited; modification and
+  derivative development are allowed only under the conditions in `LICENSE`.
 - The only current release is `versions/NoMosaic-Permanent-v1.0.0.zip`.
   The obsolete v2.4.0 runtime ZIP was deleted.
 - The release patches the user's local resource file. It does not install into
