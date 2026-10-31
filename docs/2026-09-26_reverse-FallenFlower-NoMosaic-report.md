@@ -40,6 +40,21 @@ serialized readback, and user visual confirmation all passed.
 | Resource tools | AssetRipper 1.3.10, AssetsTools.NET v8 |
 | Patch tool | .NET 8, `MosaicAssetPatch` |
 
+Analyzed artifact identity:
+
+| Artifact | SHA-256 | Signature |
+|---|---|---|
+| `FallenFlower.exe` | `D644FF01B9AEDA4BC48F47E5FFB10F5F53C1A9F3AC9768245E8980FC837A8541` | NotSigned |
+| `GameAssembly.dll` | `639279AA2243F584BE294CA5AA6AC1BD12687B9220584F4FB2AC5C9A97BD1EE3` | NotSigned |
+| `UcModLauncher.exe` | `C3FBACF66876BBFBEB6AA47FC37598804B489BB2FA2B40982CE52E50F4CA3CA3` | NotSigned |
+| `global-metadata.dat` | `BE8EA931577B3709CAFF058AC154FA1DBA20F35DE99D1FFB92BA23BAAC531D32` | n/a |
+
+`ScriptingAssemblies.json` identifies `Assembly-CSharp.dll`, `HookRuntime.dll`,
+and `Jint.dll` as the relevant managed-equivalent dependency anchors. Native
+string anchors include `KERNEL32.dll` and `UnityPlayer.dll` for the player and
+`KERNEL32.dll`, `USER32.dll`, `ADVAPI32.dll`, `WS2_32.dll`, `IPHLPAPI.DLL`,
+`SHELL32.dll`, and `dbghelp.dll` for `GameAssembly.dll`.
+
 Native IAT tools were unavailable during the initial triage, so native import
 anchors were recorded with `quality=string-derived`. IL2CPP assembly
 dependencies were confirmed through `ScriptingAssemblies.json` and metadata.
@@ -113,7 +128,7 @@ removal in the affected scene.
 | E-checkmosaic | `../work/evidence/E-checkmosaic-disassembly.md` | disassembly | Inspect RVAs `0x781100`, `0x7811D0`, and `0x7810A0` | n/a |
 | E-resource | `../work/evidence/E-mosaic-resource-implementation.md` | serialized asset | Export with AssetRipper and inspect objects, renderer, material, and Shader | n/a |
 | E-static-go | `../work/evidence/E-static-resource-patch.md` | serialized asset | Run `verify-go` against expected counts 6/2/3 | Recorded in file |
-| E-final-material | `audit/E-direct-sharedassets-material-patch.md` | file/log/manual | Run `verify-material-hidden`, direct-launch, then visually confirm | `08A35F46...DFD5E3` |
+| E-final-material | `../work/evidence/E-final-material.md` | file/log/manual | Run `verify-material-hidden`, direct-launch, then visually confirm | `08A35F46...DFD5E3` |
 
 ## Findings
 
@@ -148,10 +163,10 @@ removal in the affected scene.
 
 ## Final patch and reproduction
 
-Core source: [Program.cs](../work/tools/MosaicAssetPatch/Program.cs).
+Core source: [MosaicMaterialPatcher.cs](../src/MosaicAssetPatch/MosaicMaterialPatcher.cs).
 
 ```powershell
-$tool = 'D:\FallenFlower\MyMods\NoMosaic\work\tools\MosaicAssetPatch\bin\Release\net8.0\MosaicAssetPatch.dll'
+$tool = 'D:\FallenFlower\MyMods\NoMosaic\src\MosaicAssetPatch\bin\Release\net8.0\MosaicAssetPatch.dll'
 
 dotnet $tool verify-material-hidden 'D:\FallenFlower\FallenFlower_Data\sharedassets0.assets'
 dotnet $tool verify-go 'D:\FallenFlower\FallenFlower_Data\resources.assets' 6

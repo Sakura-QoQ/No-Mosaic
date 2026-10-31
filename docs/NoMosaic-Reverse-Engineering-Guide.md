@@ -162,7 +162,7 @@ Patch procedure:
 Core implementation:
 
 ```text
-work\tools\MosaicAssetPatch\Program.cs
+src\MosaicAssetPatch\MosaicMaterialPatcher.cs
 ```
 
 Essential logic:
@@ -252,7 +252,7 @@ execution path.
 Run in PowerShell:
 
 ```powershell
-$tool = 'D:\FallenFlower\MyMods\NoMosaic\work\tools\MosaicAssetPatch\bin\Release\net8.0\MosaicAssetPatch.dll'
+$tool = 'D:\FallenFlower\MyMods\NoMosaic\src\MosaicAssetPatch\bin\Release\net8.0\MosaicAssetPatch.dll'
 
 dotnet $tool verify-material-hidden 'D:\FallenFlower\FallenFlower_Data\sharedassets0.assets'
 dotnet $tool verify-go 'D:\FallenFlower\FallenFlower_Data\resources.assets' 6
@@ -282,9 +282,10 @@ machine.
   renderer, material, Shader, and eleven-object evidence.
 - `..\work\evidence\E-static-resource-patch.md`: serialized GameObject patch
   and readback results.
-- `audit\E-runtime-material-patch-v2.3.0.md`: runtime material-property test.
-- `audit\E-size-direction-correction-v2.3.1.md`: `_Size` direction correction.
-- `audit\E-direct-transparent-replacement-v2.4.0.md`: runtime transparent
-  material-replacement design.
-- `audit\E-direct-sharedassets-material-patch.md`: final permanent material
-  patch and direct-start validation.
+- `..\work\evidence\E-final-material.md`: final permanent material patch,
+  readback, direct-start validation, and in-scene confirmation.
+
+The temporary screenshot interpretations and per-version experiment notes were
+removed from the maintained documentation after their useful conclusions were
+consolidated into this guide. No screenshot is required to reproduce the final
+patch; verification is based on serialized readback and direct runtime checks.

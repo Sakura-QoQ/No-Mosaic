@@ -104,7 +104,7 @@
 - action: replace the serialized Mosaic material payload with the game's transparent Hided material
 - command_or_ref: MosaicAssetPatch patch-material-hidden / verify-material-hidden
 - result_summary: preserved Mosaic PathID 83 and name; shader changed from 0:691 to 1:165; installed without creating a backup
-- artifacts: [FallenFlower_Data/sharedassets0.assets, mod-audit/E-direct-sharedassets-material-patch.md]
+- artifacts: [FallenFlower_Data/sharedassets0.assets, evidence/E-final-material.md]
 - evidence_ids: [E-direct-sharedassets-material-patch]
 - decision_delta: [active_solution=permanent_material_patch, runtime_mod=disabled, launch_flag=not_required]
 - carry_forward_refs: [evidence/E-checkmosaic-disassembly.md, evidence/E-mosaic-resource-implementation.md]
@@ -117,5 +117,5 @@
 - artifacts: [NoMosaic-Reverse-Engineering-Guide.md, report/analysis.md]
 - evidence_ids: [E-direct-sharedassets-material-patch, E-static-resource-patch]
 - decision_delta: [runtime_validation=passed, visual_validation=passed, case=complete]
-- carry_forward_refs: [mod-audit/E-direct-sharedassets-material-patch.md]
+- carry_forward_refs: [evidence/E-final-material.md]
 - next: none

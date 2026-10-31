@@ -1,6 +1,6 @@
 # NoMosaic
 
-Reverse-engineering research, release sources, tools, and documentation for the
+Source, releases, and verified reverse-engineering documentation for the
 FallenFlower NoMosaic patch.
 
 > This directory is for development and archival use only. The game does not
@@ -17,8 +17,9 @@ game resources. It does not depend on a runtime Mod. Launch
 
 ```text
 NoMosaic/
-├─ docs/                  Formal report, technical guide, and audit records
-│  └─ audit/              Stage-by-stage validation and correction records
+├─ src/                   Maintained patcher source
+├─ third_party/           Pinned patcher build/runtime dependencies
+├─ docs/                  Formal report and implementation guide
 ├─ versions/              Release versions
 │  ├─ NoMosaic-Permanent-v1.0.0/
 │  └─ NoMosaic-Permanent-v1.0.0.zip
@@ -30,14 +31,25 @@ NoMosaic/
 - [Formal reverse-engineering report](docs/2026-09-26_reverse-FallenFlower-NoMosaic-report.md)
 - [Detailed reverse-engineering guide](docs/NoMosaic-Reverse-Engineering-Guide.md)
 - [Investigation timeline](work/timeline.md)
-- [Patcher source](work/tools/MosaicAssetPatch/Program.cs)
+- [Patcher source](src/MosaicAssetPatch/Program.cs)
 - [Non-commercial derivative-development license](LICENSE)
+
+## Build
+
+```powershell
+./build.ps1
+```
+
+The maintained patcher has only two operations: create a complete `Hided`
+material replacement and independently verify the resulting Shader pointer.
+The discarded `_Size`, GameObject-deactivation, tree-dump, and scan experiments
+remain described in the reverse-engineering guide, not in production code.
 
 ## Important notes
 
 - NoMosaic is not MIT-licensed. Commercial use is prohibited; modification and
   derivative development are allowed only under the conditions in `LICENSE`.
-- The only current release is `versions/NoMosaic-Permanent-v1.0.0.zip`.
+- The current release is `versions/NoMosaic-Permanent-v1.0.1.zip`; v1.0.0 is retained as history.
   The obsolete v2.4.0 runtime ZIP was deleted.
 - The release patches the user's local resource file. It does not install into
   the game's `Mods` directory and does not require `--enable-mods`.
@@ -50,3 +62,9 @@ NoMosaic/
   and regenerate the patch.
 - Original and patched game resource bundles are not distributed by this
   repository. See `LICENSE` for the complete rights boundary.
+
+## Maintained source verification
+
+Command parsing lives in `PatchCommand.cs`; asset loading and material patching remain separate. The class database is declared once in the project and copied by MSBuild for both build and publish. Patch output must be a new file: existing output files and in-place writes are rejected. Duplicate target materials and a null Hided Shader are incompatible assets.
+
+After building, run `./tools/Test-Patcher.ps1 -AssetPath <local-sharedassets0.assets>`. The test uses isolated copies under artifacts, checks CLI exit codes and patch/verify, and checks that both inputs retain their SHA-256 hashes. It never installs a patch. Verification checks Shader pointers; it is not a full material or in-game visual comparison. Historical releases under versions are unchanged by this build.

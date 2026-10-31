@@ -1,0 +1,15 @@
+1. Extract the downloaded ZIP to a normal writable folder.
+2. Close FallenFlower completely.
+3. Double-click Install-NoMosaic.cmd.
+4. If prompted, enter the full FallenFlower installation directory.
+5. Wait until the installer reports "Installation completed successfully."
+6. Launch FallenFlower.exe normally.
+
+No Mod manager or --enable-mods launch option is required.
+
+Requirements:
+- Windows PowerShell 5.1 or later.
+- Microsoft .NET 8 Runtime.
+
+To uninstall, use the game platform's Verify/Repair Files feature or reinstall
+the game. The installer does not create a backup copy.
